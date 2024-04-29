@@ -999,7 +999,7 @@ A kernel size of 3 and `relu` as activation function is the best tested combinat
 Grid search can quickly result in a combinatorial explosion because all combinations of hyperparameters are trained and tested.
 Instead, `random search` randomly samples combinations of hyperparemeters, allowing for a much larger look through a large number of possible hyperparameter combinations.
 
-Next to grid search and random search there are many different hyperparameter tuning strategies, including `neural architecture search` where a separate neural network is trained to find the best architecture for a model!
+Next to grid search and random search there are many different hyperparameter tuning strategies, including [neural architecture search](https://en.wikipedia.org/wiki/Neural_architecture_search) where a separate neural network is trained to find the best architecture for a model!
 
 ## 10. Share model
 Let's save our model
