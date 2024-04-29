@@ -816,7 +816,7 @@ def create_nn_with_hp(dropout_rate, n_layers):
 Now, let's find the best combination of hyperparameters using grid search. 
 Grid search is the simplest hyperparameter tuning strategy, 
 you test all the combinations of predefined values for the hyperparameters that you want to vary.
-Note that this can take a some time to train (around 5 minutes or longer).
+Note that this can take some time to train (around 5 minutes or longer).
 ```python
 import keras_tuner
 
