@@ -794,7 +794,7 @@ You might want to demonstrate this section on hyperparamater tuning instead of d
 The goal is to show that hyperparameter tuning can be done easily with `keras_tuner`, not to memorize all the exact syntax of how to do it. This will probably save you half an hour of participants typing over code that they already know from before. In addition, on really slow machines running the grid search could possibly take more than 10 minutes.
 :::
 
-In general if you are varying hyperparameters (such as the dropout rate) to find the combination of hyperparameters with the best model performance this is called hyperparameter tuning. A naive way to do this is to write a for-loop and train a slightly different model in every cycle. 
+Recall that hyperparameters are model configuration settings that are chosen before the training process and affect the model's learning behavior and performance, for example the dropout rate. In general, if you are varying hyperparameters to find the combination of hyperparameters with the best model performance this is called hyperparameter tuning. A naive way to do this is to write a for-loop and train a slightly different model in every cycle. 
 However, it is better to use the `keras_tuner` package for this.
 
 Let's first define a function that creates a neuronal network given 2 hyperparameters, namely the dropout rate and the number of layers:
@@ -906,7 +906,7 @@ Score: 1.4468265771865845
 
 2 (Optional): Perform a grid search finding the best combination of the following hyperparameters: 2 different activation functions: 'relu', and 'tanh', and 2 different values for the kernel size: 3 and 4. Which combination works best?
 
-**Hint**: You can use `hp.Choice("name", ["value1", "value2"])` to use hyperparameters from a predefined set of possible values. 
+**Hint**: Instead of `hp.Int` you should now use `hp.Choice("name", ["value1", "value2"])` to use hyperparameters from a predefined set of possible values. 
 
 :::: solution
 ## Solution
